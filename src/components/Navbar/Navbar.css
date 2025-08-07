@@ -1,0 +1,101 @@
+.Navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar .logo{
+    width: 50px;
+}
+.Navbar-logo1{
+    display: flex;
+    color: green;
+    flex-direction: row;
+}
+.Navbar-logo1 h2{
+    margin-top:20px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.Navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 18px;
+    color: green;
+}
+
+.Navbar-right{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+
+ .search_icon{
+    width: 30px;
+}
+ .basket_icon{
+    width: 30px;
+}
+
+.Navbar button{
+    background:transparent;
+    font-size: 16px;
+    color: green;
+    border: 1px solid green;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Navbar button:hover{
+    background-color: wheat;
+}
+
+.Navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid green;
+}
+
+.Navbar li{
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1050px){
+    .Navbar-logo{
+        width: 140px;
+    }
+
+    .Navbar-logo1 h2{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    
+    .Navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+
+    }
+    .Navbar-right{
+        gap: 30px;
+    }
+
+    .Navbar-right img{
+        width: 22px;
+    }
+    .Navbar-right button{
+          padding: 8px 25px;
+          font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+    .Navbar-menu{
+        display: none;
+    }
+
+}

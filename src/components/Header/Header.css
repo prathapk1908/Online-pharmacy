@@ -1,0 +1,73 @@
+.Header{
+    height: 34vw;
+    width: 100%;
+    margin: 30px auto;
+    background: url('/Hero2.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.Header-Contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 20%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.Header-Contents h2{
+    font-weight: 500;
+    color:violet;
+    font-size: max(4.5vw,22px);
+
+}
+
+.Header-Contents p{
+    color:black;
+    font-size: 1.4vw;
+
+}
+
+.Header-Contents button{
+    border: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 10px;
+    background: orange;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+
+}
+
+@media (max-width:1050px){
+    .Header{
+        height: 38vw;
+
+    }
+
+    .Header-Contents{
+        max-width: 45%;
+    }
+
+}
+
+@media(max-width:750px){
+    .Header-Contents{
+        max-width: 55%;
+    }
+
+    .Header-Contents p{
+        display: none;
+
+    }
+
+    .Header-Contents button{
+        padding: 2vw 4px;
+    }
+}

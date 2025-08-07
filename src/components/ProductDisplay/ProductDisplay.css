@@ -1,0 +1,80 @@
+.Product-display {
+  margin-top: 30px;
+  padding: 0 40px;
+  position: relative;
+  margin-left: -40px;
+}
+
+.Product-display h2 {
+  font-size: max(1vw, 24px);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Product-display-list {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.Product-display-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.product-scroll-item {
+  flex: 0 0 auto;
+  width: 200px; /* Same width for all cards */
+}
+
+/* Scroll Button Styles */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 128, 0, 0.8);
+  color: white;
+  border: none;
+  z-index: 10;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn.left {
+  left: -15px;
+}
+
+.scroll-btn.right {
+  right: -15px;
+}
+
+.Product-display hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: rgb(241, 238, 231);
+    border: none;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .scroll-btn {
+    padding: 8px;
+    font-size: 18px;
+  }
+}
+
